@@ -1,20 +1,23 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
-
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  <div class="menu">
+    <ion-card *ngFor="let item of [1,2,3,4,5,6,7,8,9]">
+      <img alt="Silhouette of mountains" src="https://cdn.dotpe.in/longtail/store-items/6655963/0hMnmFQA.jpeg" />
+      <ion-card-header>
+        <ion-card-title>50.-</ion-card-title>
+        <ion-card-subtitle>กาแฟดีท๊อกซ์</ion-card-subtitle>
+      </ion-card-header>
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+      <ion-card-content>
+        กาแฟดีท๊อกซ์ Cofee Detox -1ซอง 4g -บรรจุ 12ซอง วิธีใช้ -1ซอง ละลายกับน้ำร้อน1แก้ว
+        แล้วเติมน้ำสะอาดให้ได้ปริมาณ
+        1000-1300ml โดยอุณหภูมิน้ำที่จะใช้สวนล้างควรมีอุณหภูมิใกล้เคียงกับอุณหภูมิร่างกาย
+      </ion-card-content>
+    </ion-card>
   </div>
+  <ion-fab slot="fixed" vertical="bottom" horizontal="end">
+    <ion-fab-button>
+      <ion-icon name="cart-outline"></ion-icon>
+    </ion-fab-button>
+    <ion-label class="badge">20</ion-label>
+  </ion-fab>
 </ion-content>
