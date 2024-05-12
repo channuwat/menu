@@ -1,7 +1,17 @@
+.menu-data {
+  padding: 0px 0px 65px 0px;
+}
+
+.group {
+  font-size: 25px;
+  border-bottom: solid 2px #3e3e3e;
+  margin-bottom: 25px;
+}
+
 .menu {
   max-width: 450px;
   margin: auto;
-  padding: 15px 15px 65px 10px;
+  padding: 15px;
 
   ion-card {
     margin-bottom: 25px;
