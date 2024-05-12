@@ -27,7 +27,7 @@
             {{menu.detail}}
           </ion-card-content>
           <div class="ion-text-end ion-padding">
-            <ion-button>
+            <ion-button (click)="addCart(group.id,menu)">
               <ion-icon name="add-outline"></ion-icon>
               เพิ่มใส่ตะกร้า
             </ion-button>
@@ -38,10 +38,10 @@
   </div>
 
 
-  <ion-fab slot="fixed" vertical="bottom" horizontal="end">
+  <ion-fab slot="fixed" vertical="bottom" horizontal="end" (click)="onCart()" *ngIf="cartValues() > 0">
     <ion-fab-button>
       <ion-icon name="cart-outline"></ion-icon>
     </ion-fab-button>
-    <ion-label class="badge">20</ion-label>
+    <ion-label class="badge">{{cartValues()}}</ion-label>
   </ion-fab>
 </ion-content>
