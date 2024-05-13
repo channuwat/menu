@@ -5,7 +5,6 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HomePage } from './home.page';
 
 import { HomePageRoutingModule } from './home-routing.module';
-import { CartComponent } from './cart/cart.component';
 
 
 @NgModule({
@@ -18,8 +17,7 @@ import { CartComponent } from './cart/cart.component';
     ReactiveFormsModule
   ],
   declarations: [
-    HomePage,
-    CartComponent
+    HomePage
   ]
 })
 export class HomePageModule { }
