@@ -1,10 +1,31 @@
+.content-menu {
+  display: flex;
+  height: 110px;
+}
+
+.content-detail {
+  display: flex;
+  justify-content: space-between;
+  width: -webkit-fill-available;
+}
+
+.img {
+  margin: 5px;
+  width: 100px;
+  height: 100px;
+  min-width: 100px;
+  min-height: 100px;
+  background-position: center;
+  background-size: cover;
+}
+
 .menu-data {
   padding: 0px 0px 65px 0px;
 }
 
 .group {
   font-size: 25px;
-  border-bottom: solid 0.5px #e2e2e2;
+  border-bottom: solid 4.5px #c5000f;
   margin-bottom: 25px;
 }
 

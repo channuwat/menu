@@ -1,27 +1,29 @@
 <ion-content [fullscreen]="true">
+  <ion-searchbar mode="ios" placeholder="ค้นหาเมนูอาหาร..."></ion-searchbar>
   <div class="menu-data">
     <div class="group-menu" *ngFor="let group of menuData">
       <div class="menu">
-        <div class="group ion-padding group">
+        <div class="group ion-padding group" style="color: #982421;font-weight: 500;">
           {{group.group}}
         </div>
         <ion-card *ngFor="let menu of group.menu">
-          <img alt="Silhouette of mountains" [src]="menu.img" />
-          <ion-card-header>
-            <ion-card-title>
-              <strong>
-                {{menu.name}}
-              </strong>
-            </ion-card-title>
-          </ion-card-header>
-
-          <ion-card-content>
-            {{menu.detail}}
-          </ion-card-content>
-          <div class="ion-text-end ion-padding">
-            <ion-card-title>
-              {{menu.price|number}}.-
-            </ion-card-title>
+          <div style="background: #ffc442;height: 15px;"></div>
+          <div class="content-menu">
+            <div class="img" [style.background-image]="'url(' + menu.img + ')'"></div>
+            <div class="content-detail">
+              <ion-card-header>
+                <strong>
+                  {{menu.name}}
+                </strong>
+              </ion-card-header>
+              <div class="ion-text-end ion-padding">
+                <ion-badge color="danger" mode="ios">
+                  <strong>
+                    {{menu.price|number}}.-
+                  </strong>
+                </ion-badge>
+              </div>
+            </div>
           </div>
         </ion-card>
       </div>
