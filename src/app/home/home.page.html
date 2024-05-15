@@ -1,21 +1,33 @@
 <ion-content [fullscreen]="true">
-  <ion-searchbar mode="ios" placeholder="ค้นหาเมนูอาหาร..."></ion-searchbar>
   <div class="menu-data">
-    <div class="group-menu" *ngFor="let group of menuData">
+    <div class="header">
+      <div class="logo">
+
+      </div>
+    </div>
+    <div class="segment-group">
+      <div class="segment">
+        <ion-segment mode="md" color="danger" [scrollable]="true" [value]="menuData[0]">
+          <ion-segment-button *ngFor="let group of menuData" [value]="group" (click)="set_Menu(group)">
+            <ion-label>{{group.group}}</ion-label>
+          </ion-segment-button>
+        </ion-segment>
+      </div>
+
+    </div>
+    <div class="group-menu">
       <div class="menu">
         <div class="group ion-padding group" style="color: #982421;font-weight: 500;">
-          {{group.group}}
+          {{_Menu(onclickMenu).group}}
         </div>
-        <ion-card *ngFor="let menu of group.menu">
-          <div style="background: #ffc442;height: 15px;"></div>
+        <ion-card *ngFor="let menu of _Menu(onclickMenu).menu">
+          <!-- <div style="background: #ffc442;height: 15px;"></div> -->
           <div class="content-menu">
             <div class="img" [style.background-image]="'url(' + menu.img + ')'"></div>
             <div class="content-detail">
-              <ion-card-header>
-                <strong>
-                  {{menu.name}}
-                </strong>
-              </ion-card-header>
+              <strong style="padding: 5px;color: #982421;font-weight: 500;">
+                {{menu.name}}
+              </strong>
               <div class="ion-text-end ion-padding">
                 <ion-badge color="danger" mode="ios">
                   <strong>

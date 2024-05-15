@@ -40,4 +40,13 @@ export class HomePage {
       this.api.setStore('cart', store)
     }
   }
+
+  onclickMenu: any = menu[0]
+  set_Menu(array: any) {
+    this.onclickMenu = array
+  }
+
+  _Menu(array: any) {
+    return array
+  }
 }
