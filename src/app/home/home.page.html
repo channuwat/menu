@@ -25,13 +25,24 @@
           <div class="content-menu">
             <div class="img" [style.background-image]="'url(' + menu.img + ')'"></div>
             <div class="content-detail">
-              <strong style="padding: 5px;color: #982421;font-weight: 500;">
-                {{menu.name}}
-              </strong>
+              <div style="margin-top: 10px;">
+                <strong style="padding: 5px 10px 5px 5px;color: #982421;font-weight: 500;">
+                  {{menu.name}}
+                </strong>
+                <div class="options">
+                  <div *ngFor="let opt of menu.options">
+                    - {{opt.title}} ({{opt.price}}.-)
+                  </div>
+                </div>
+              </div>
+
               <div class="ion-text-end ion-padding">
                 <ion-badge color="danger" mode="ios">
-                  <strong>
+                  <strong *ngIf="menu.price > 0">
                     {{menu.price|number}}.-
+                  </strong>
+                  <strong *ngIf="menu.price < 1">
+                    มีตัวเลือก
                   </strong>
                 </ion-badge>
               </div>

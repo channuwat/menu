@@ -43,7 +43,7 @@
 }
 
 .segment-group {
-  padding: 12px 0px;
+  padding: 12px 10px;
   margin: auto;
   width: 400px;
   overflow: auto;
@@ -87,4 +87,8 @@
   right: -5px;
   font-size: small;
   font-weight: bold;
+}
+
+.options{
+  font-weight: 200;
 }
