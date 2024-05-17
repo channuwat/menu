@@ -20,7 +20,7 @@
         <div class="group ion-padding group" style="color: #982421;font-weight: 500;">
           {{_Menu(onclickMenu).group}}
         </div>
-        <ion-card *ngFor="let menu of _Menu(onclickMenu).menu">
+        <ion-card *ngFor="let menu of _Menu(onclickMenu).menu" style="margin: 15px 0px;">
           <!-- <div style="background: #ffc442;height: 15px;"></div> -->
           <div class="content-menu">
             <div class="img" [style.background-image]="'url(' + menu.img + ')'"></div>
@@ -52,4 +52,24 @@
       </div>
     </div>
   </div>
+
+  <!-- <ion-fab  slot="fixed" vertical="bottom" horizontal="end">
+    <ion-fab-button color="danger">
+      <ion-icon name="storefront-outline"></ion-icon>
+    </ion-fab-button>
+    <ion-fab-list side="top">
+      <ion-fab-button>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXT9mH3dp0BdPMYDJlDBqF8ToEZONLbxC4M2_474K81Q&s" [src]="'https://www.facebook.com/6AMbreakfast'">
+      </ion-fab-button>
+      <ion-fab-button>
+        <img src="https://play-lh.googleusercontent.com/Sr7gzREgHeBXgUrFM5y0cxkP4WZLTKwje512KRcbJfV1Cla6J_ai5y0Etiav3MHRC1I" alt="">
+      </ion-fab-button>
+      <ion-fab-button>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Google_Maps_icon_%282015-2020%29.svg/2048px-Google_Maps_icon_%282015-2020%29.svg.png" alt="">
+      </ion-fab-button>
+      <ion-fab-button>
+        <img src="https://cdn.pixabay.com/photo/2021/06/15/12/51/facebook-6338507_1280.png" alt="">
+      </ion-fab-button>
+    </ion-fab-list>
+  </ion-fab> -->
 </ion-content>

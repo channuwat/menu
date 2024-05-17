@@ -183,24 +183,24 @@ var menu_data = [
         'menu': [
             {
                 'id': 1,
-                'img': 'assets/img/eggpan_og.jpg',
-                'name': 'ก๋วยจั๊บเล้งหมู',
+                'img': 'assets/img/ก๋วยจั๊บญวนเล้งหมู.jpg',
+                'name': 'ก๋วยจั๊บญวนเล้งหมู',
                 'price': 50,
                 'detail': '',
                 'options': []
             },
             {
                 'id': 2,
-                'img': '/assets/img/4king.jpg',
-                'name': 'ก๋วยจั๊บเล้งหมูไข่ลวก',
+                'img': '/assets/img/ก๋วยจั๊บญวนเล้งหมูไข่ลวก.jpg',
+                'name': 'ก๋วยจั๊บญวนเล้งหมูไข่ลวก',
                 'price': 60,
                 'detail': '',
                 'options': []
             },
             {
                 'id': 3,
-                'img': 'assets/img/eggpan_og.jpg',
-                'name': 'ก๋วยจั๊บต้มยำเล้งหมูไข่ลวก',
+                'img': 'assets/img/ก๋วยจั๊บญวนเล้งหมูต้มยำไข่ลวก.jpg',
+                'name': 'ก๋วยจั๊บญวนเล้งหมูต้มยำไข่ลวก',
                 'price': 70,
                 'detail': '',
                 'options': []
@@ -213,19 +213,23 @@ var menu_data = [
         'menu': [
             {
                 'id': 1,
-                'img': 'assets/img/eggpan_og.jpg',
-                'name': 'ข้าวต้มหมู',
+                'img': 'assets/img/ข้าวต้มเล้งหมู.jpg',
+                'name': 'ข้าวต้มเล้งหมู',
                 'price': 45,
                 'detail': '',
-                'options': []
+                'options': [
+                    { 'title': 'เพิ่มไข่ลวก', 'price': 55 },
+                ]
             },
             {
                 'id': 2,
-                'img': '/assets/img/4king.jpg',
-                'name': 'ข้าวต้มปลา',
+                'img': '/assets/img/ข้าวต้มปลาดอลลี่.jpg',
+                'name': 'ข้าวต้มปลาดอลลี่',
                 'price': 50,
                 'detail': '',
-                'options': []
+                'options': [
+                    { 'title': 'เพิ่มไข่ลวก', 'price': 60 },
+                ]
             },
         ]
     },
@@ -235,7 +239,7 @@ var menu_data = [
         'menu': [
             {
                 'id': 1,
-                'img': 'assets/img/eggpan_og.jpg',
+                'img': 'assets/img/โกโก้.jpg',
                 'name': 'โกโก้',
                 'price': 0,
                 'detail': '',
@@ -246,7 +250,7 @@ var menu_data = [
             },
             {
                 'id': 2,
-                'img': '/assets/img/4king.jpg',
+                'img': '/assets/img/โอวันติน.png',
                 'name': 'โอวันติน',
                 'price': 0,
                 'detail': '',
@@ -257,18 +261,31 @@ var menu_data = [
             },
             {
                 'id': 3,
-                'img': 'assets/img/eggpan_og.jpg',
-                'name': 'กาแฟโบราณ',
+                'img': 'assets/img/กาแฟโบราณ.png',
+                'name': 'กาแฟโบราณร้อน',
                 'price': 0,
                 'detail': '',
                 'options': [
-                    { 'title': 'ร้อน', 'price': 25 },
-                    { 'title': 'เย็น', 'price': 35 },
+                    { 'title': 'กาแฟดำ', 'price': 25 },
+                    { 'title': 'กาแฟใส่นม', 'price': 25 },
+                ]
+            },
+            {
+                'id': 3,
+                'img': 'assets/img/กาแฟโบราณ.png',
+                'name': 'กาแฟโบราณเย็น',
+                'price': 0,
+                'detail': '',
+                'options': [
+                    { 'title': 'กาแฟดำ', 'price': 35 },
+                    { 'title': 'เอสเย็นโบราณ', 'price': 35 },
+                    { 'title': 'ลาเต้เย็นโบราณ', 'price': 40 },
+                    { 'title': 'มอคค่าเย็นโบราณ', 'price': 40 },
                 ]
             },
             {
                 'id': 4,
-                'img': 'assets/img/eggpan_og.jpg',
+                'img': 'assets/img/ชาเขียว.jpg',
                 'name': 'ชาเขียว',
                 'price': 0,
                 'detail': '',
@@ -279,7 +296,7 @@ var menu_data = [
             },
             {
                 'id': 4,
-                'img': 'assets/img/eggpan_og.jpg',
+                'img': 'assets/img/ชาไทย.png',
                 'name': 'ชาไทย',
                 'price': 0,
                 'detail': '',
@@ -290,46 +307,25 @@ var menu_data = [
             },
             {
                 'id': 4,
-                'img': 'assets/img/eggpan_og.jpg',
-                'name': 'อเมกาโน่',
+                'img': 'assets/img/กาแฟสด.jpeg',
+                'name': 'กาแฟสดร้อน',
                 'price': 0,
                 'detail': '',
                 'options': [
-                    { 'title': 'ร้อน', 'price': 40 },
-                    { 'title': 'เย็น', 'price': 45 },
+                    { 'title': 'อเมกาโน่', 'price': 45 }
                 ]
             },
             {
                 'id': 4,
-                'img': 'assets/img/eggpan_og.jpg',
-                'name': 'เอสเพลสโซ่',
+                'img': 'assets/img/กาแฟสด.jpeg',
+                'name': 'กาแฟสดเย็น',
                 'price': 0,
                 'detail': '',
                 'options': [
-                    { 'title': 'ร้อน', 'price': 45 },
-                    { 'title': 'เย็น', 'price': 50 },
-                ]
-            },
-            {
-                'id': 4,
-                'img': 'assets/img/eggpan_og.jpg',
-                'name': 'ลาเต้',
-                'price': 0,
-                'detail': '',
-                'options': [
-                    { 'title': 'ร้อน', 'price': 45 },
-                    { 'title': 'เย็น', 'price': 50 },
-                ]
-            },
-            {
-                'id': 4,
-                'img': 'assets/img/eggpan_og.jpg',
-                'name': 'มอคค่า',
-                'price': 0,
-                'detail': '',
-                'options': [
-                    { 'title': 'ร้อน', 'price': 45 },
-                    { 'title': 'เย็น', 'price': 50 },
+                    { 'title': 'อเมกาโน่', 'price': 50 },
+                    { 'title': 'เอสเย็น', 'price': 55 },
+                    { 'title': 'ลาเต้', 'price': 55 },
+                    { 'title': 'มอคค่า', 'price': 55 },
                 ]
             },
         ]

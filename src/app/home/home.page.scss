@@ -13,7 +13,7 @@
 
 .content-menu {
   display: flex;
-  height: 110px;
+  min-height: 80px;
 }
 
 .content-detail {
@@ -25,10 +25,10 @@
 
 .img {
   margin: 5px;
-  width: 100px;
-  height: 100px;
-  min-width: 100px;
-  min-height: 100px;
+  width: 70px;
+  height: 70px;
+  min-width: 70px;
+  min-height: 70px;
   background-position: center;
   background-size: cover;
   border-radius: 15px;
@@ -43,13 +43,18 @@
 }
 
 .segment-group {
-  padding: 12px 10px;
+  margin-top: 12px;
+  padding: 0px 10px;
   margin: auto;
   width: 400px;
   overflow: auto;
 
   .segment {
     width: 600px;
+  }
+
+  ion-segment{
+    padding: 5px;
   }
 }
 
@@ -91,4 +96,5 @@
 
 .options{
   font-weight: 200;
+  padding: 5px 15px 10px;
 }
