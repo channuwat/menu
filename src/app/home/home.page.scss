@@ -42,16 +42,23 @@
   background-position: left;
 }
 
+
 .segment-group {
   margin-top: 12px;
   padding: 0px 10px;
   margin: auto;
   width: 400px;
-  overflow: auto;
+  // overflow: auto;
 
   .segment {
     width: 600px;
   }
+
+  ion-segment{
+    width: 400px;
+    overflow: auto;
+  }
+  
 
   ion-segment{
     padding: 5px;
